@@ -1,0 +1,38 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Muli&display=swap");
+body {
+  height: 100%; }
+  body button {
+    background: none;
+    border: none; }
+    body button .skill-header {
+      margin-top: 15px !important; }
+  body header #nav-bard span {
+    width: 50px !important;
+    height: 50px !important; }
+  body footer {
+    background-color: #000a18;
+    height: 80px; }
+    body footer div a {
+      font-family: 'lobster', cursive;
+      font-size: 30px;
+      color: white !important;
+      padding: 0.5rem !important; }
+    body footer div a:hover {
+      color: rgba(255, 255, 255, 0.65);
+      text-decoration: none;
+      opacity: 0.6; }
+    body footer div #copyright {
+      margin-top: 2rem;
+      color: #feeb00 !important;
+      font-weight: 700;
+      margin-bottom: 0 !important; }
+
+@media (max-width: 1000px) {
+  header #curtain-box {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%; }
+  header .nav-link {
+    font-size: 60px !important; }
+  footer a {
+    font-size: 50px !important; } }

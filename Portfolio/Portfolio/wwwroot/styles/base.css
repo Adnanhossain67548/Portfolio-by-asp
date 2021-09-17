@@ -1,0 +1,15 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&display=swap');
+
+body {
+    margin: auto;
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

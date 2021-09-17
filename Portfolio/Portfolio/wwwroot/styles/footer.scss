@@ -1,0 +1,73 @@
+﻿$breakpoint-tablet: 1000px;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Muli&display=swap');
+
+
+body {
+    height: 100%;
+
+    button {
+        background: none;
+        border: none;
+
+        .skill-header {
+            margin-top: 15px !important;
+        }
+    }
+
+
+    header {
+        #nav-bard {
+            span {
+                width: 50px !important;
+                height: 50px !important;
+            }
+        }
+    }
+
+    footer {
+        background-color: #000a18;
+        height: 80px;
+
+        div {
+
+            a {
+                font-family: 'lobster', cursive;
+                font-size: 30px;
+                color: white !important;
+                padding: 0.5rem !important;
+            }
+
+            a:hover {
+                color: rgba(255, 255, 255, 0.65);
+                text-decoration: none;
+                opacity: 0.6;
+            }
+
+            #copyright {
+                margin-top: 2rem;
+                color: #feeb00 !important;
+                font-weight: 700;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    header {
+        #curtain-box {
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            width: 100%;
+        }
+
+        .nav-link {
+            font-size: 60px !important;
+        }
+    }
+    footer {
+        a{
+            font-size: 50px !important;
+        }
+    }
+}

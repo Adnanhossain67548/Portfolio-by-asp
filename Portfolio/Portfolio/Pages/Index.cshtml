@@ -1,0 +1,288 @@
+﻿@page
+@model Portfolio.Pages.IndexModel
+@{
+}
+
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="~/styles/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/styles/base.css?t=@DateTime.Now.Ticks" type="text/css" />
+    <link rel="stylesheet" href="~/styles/layout.css?t=@DateTime.Now.Ticks" type="text/css" />
+    <link rel="stylesheet" href="~/styles/module.css?t=@DateTime.Now.Ticks" type="text/css" />
+    <link rel="stylesheet" href="~/styles/footer.css?t=@DateTime.Now.Ticks" type="text/css" />
+
+</head>
+
+<body data-spy="scroll">
+    <header id="curtain-box">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navvy" style="background-color:#000a18;">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" id="nav-bard">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a href="https://blogpost-jwk.herokuapp.com/" class="nav-link" target="_blank">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#about-us" class="nav-link">About Me</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            <div id="text-box">
+                <h1>Ismail Hossain</h1>
+                <p>Software Engineer</p>
+                <p>Bangladesh, Dhaka</p>
+            </div>
+    </header>
+    <main>
+        <div id="skills"></div>
+        <h1 class="text-center font-weight-bold">SKILLS</h1>
+            <div class="row mt-5 skill-container">
+                <div class="col-md-2 skill-box">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Passionate about developing and delivering high quality code that is easy to read and maintain. Refactors code to improve the quality. Habitually applies agile development principles, displaying a solid understanding of agile processes, reports, and metrics, and how to use them." class="skill-button">
+                        <img src="~/images/agile.png" alt="agile" class="skill-image" />
+                        <h4 class="text-center skill-header">Agile</h4>
+                    </button>
+                </div>
+                <div class="col-md-2 skill-box">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Always put forward of creating secure apps without little to no vulnerability. Knowledgeable on web application vulnerability, threat and risk management." class="skill-button">
+                        <img src="~/images/qa.png" alt="Security" class="skill-image" />
+                        <h4 class="text-center skill-header">Security Mindset</h4>
+                    </button>
+                </div>
+                <div class="col-md-2 skill-box">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Passionate about learning new cloud infrastructure. Knowledgeable in IaS, PaS and SaS infrastructure. Able to virtualiz the development environment to create uniform baseline.">
+                        <img src="~/images/cloud.png" alt="Cloud Driven" class="skill-image" />
+                        <h4 class="text-center skill-header">Cloud Passionate</h4>
+                    </button>
+                </div>
+                <div class="col-md-2 skill-box">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Great understanding in data flow and entity relationship. Have worked with multiple databases and tables on creating a seamless application." class="skill-button">
+                        <img src="~/images/relation.png" alt="Database relation" class="skill-image" />
+                        <h4 class="text-center skill-header">SQL and Database</h4>
+                    </button>
+
+                </div>
+            </div>
+        <div id="about-us"></div>
+        <h1 class="text-center font-weight-bold">ABOUT ME</h1>
+        <div class="row col-lg-12 mx-auto">
+            <div class="col-lg-6 text-center p-sm-5 mb-2">
+                <img src="~/images/adnan.png" alt="Profile picture" class="w-sm-50" id="profile-pic" />
+            </div>
+            <div class="col-lg-5">
+                <p id="profile-info">
+                    Lifelong learner and software engineer who is passionate about mentoring others and always in search for expanding current skill. Have experience in both web development and web application security. Developed multiple projects and familiar with industry standards about preventing web vulnerabilities and software development. Experienced in working independently and in collaborating environment.
+                </p>
+                <div id="link-content">
+                    <div>
+                        <a href="https://www.linkedin.com/in/adnan-hossain-a5b545198/" class="link-fonts" target="_blank">Linkedin</a>
+                    </div>
+                    <div>
+                        <a href="https://www.github.com/jinwoov" class="link-fonts" target="_blank">Github</a>
+                    </div>
+                    <div>
+                        <a href="https://leetcode.com/jinfluenza/" class="link-fonts" target="_blank">LeetCode</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects"></div>
+        <div class="mt-1">
+            <div>
+                <h1 class="text-center font-weight-bold title">PROJECTS</h1>
+            </div>
+            <div class="row text-center project-row">
+                <div class="col-lg-4 my-3 projectBox">
+                    <a href="https://booking-advisor.herokuapp.com/" target="_blank">
+                        <img class="card-img-top rounded" alt="Booking-Advisor" src="~/images/booking-advisor.png">
+                        <div class="position-absolute cardbody text-dark">
+                            <div class="inner-container">
+                                <h5 class="card-title">Booking Advisor</h5>
+                                <h6>A traveling website that service to customer with hotel information of the desired location, with slight twist of web application vulnerabilities.</h6>
+                                <p class="card-text">Tools Used: ASP.NET core, C#, Docker, Github Action, Sass, jQuery</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 my-3 projectBox">
+                    <a href="https://github.com/cloudfellows/stuxnet-worm" target="_blank">
+                        <img class="card-img-top rounded" alt="Stuxnet" src="~/images/stuxnet.jpg">
+                        <div class="position-absolute cardbody text-dark">
+                            <div class="inner-container">
+                                <h5 class="card-title">Case Study: Stuxnet</h5>
+                                <p>Case study of well known malware Stuxnet and simulate its source code with automated mitigation script. Referenced multitude of frameworks to create a documentation, including STRIDE, DREAD, NIST-800 and MITRE ATT&CK.</p>
+                                <p class="card-text">Tools Used: Python, Vagrant, Virtual Machines, and Snort</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 my-3 projectBox">
+                    <a href="https://jinkim.itch.io/kodekid" target="_blank">
+                        <img class="card-img-top rounded" alt="Kode Kid" src="~/images/Kodekids.png">
+                        <div class="position-absolute cardbody text-dark">
+                            <div class="inner-container">
+                                <h5 class="card-title">Kode Kid</h5>
+                                <p>Side scrolling 2D game built in Unity. A "student" is trying to make it to class, but he must face many obstacles and overcome puzzles and platforming to reach his goal.</p>
+                                <p class="card-text">Tools Used: Unity, C#, Piskel</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row text-center project-row">
+                <div class="col-lg-4 my-3 projectBox">
+                    <a href="https://e-commercemvc.azurewebsites.net/" target="_blank">
+                        <img class="card-img-top rounded" alt="E-Commerce" src="~/images/quikfix.jpg">
+                        <div class="position-absolute cardbody text-dark">
+                            <div class="inner-container">
+                                <h5 class="card-title w-100">Quik Fix</h5>
+                                <p>E-commerce website that is created using ASP.NET framework. User are able to register and login securely to the website and purchase service of their choice securely.</p>
+                                <p class="card-text">Tools Used: ASP.NET core, C#, Azure, Azure Dev-Ops, MySQL, Bootstrap, jQuery</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 my-3 projectBox">
+                    <a href="https://github.com/TeamBoPeep/BoPeepMVCApp" target="_blank">
+                        <img class="card-img-top rounded" alt="Bored To Death" src="~/images/btd.jpg">
+                        <div class="position-absolute cardbody text-dark">
+                            <div class="inner-container">
+                                <h5 class="card-title">Bored To Death</h5>
+                                <p>
+                                    A web application that is designed using ASP.NET framework calls custom API server that utilize CRUD operations.
+                                </p>
+                                <p class="card-text">Tools Used: ASP.NET core, C#, Azure, RESTful API, Entity Framework, MVC framework</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 my-3 projectBox">
+                    <a href="https://jumpstartcf.herokuapp.com/" target="_blank">
+                        <img class="card-img-top rounded" alt="JumpStart" src="~/images/jumpstart.png">
+                        <div class="position-absolute cardbody text-dark">
+                            <div class="inner-container">
+                                <h5 class="card-title">JumpStart</h5>
+                                <p>A web application that incorporates node.js using MVC framework. Each search calls three API to different website and aggregates the result into random orders.</p>
+                                <p class="card-text">Tools Used: Node.js, Javascript, jQuery, PSQL, HTML, CSS</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="Open-source-contribution"></div>
+        <div class="container my-5">
+            <h2 class="text-center font-weight-bold title">OPEN-SOURCE CONTRIBUTIONS</h2>
+            <div class="row">
+                <div class="col-lg-4 my-3 osc-pic">
+                    <a href="https://github.com/Security-Onion-Solutions/securityonion-cloud" target="_blank">
+                        <img src="~/images/sos-icon.png" class="card-img-top rounded" alt="Security Onion" />
+                        <div class="position-absolute cardbody text-dark">
+                            <div class="inner-container">
+                                <h5 class="card-title text-center">Security Onion</h5>
+                                <p class="text-center">November, 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 my-3 osc-pic">
+                    <a href="https://github.com/jinwoov/hacktoberfest" target="_blank">
+                        <img src="~/images/hacktober-fest.svg" class="card-img-top rounded" alt="Hacktoberfest" />
+                        <div class="position-absolute cardbody text-dark">
+                            <div class="inner-container">
+                                <h5 class="card-title text-center">Hacktober Fest</h5>
+                                <p class="text-center">October, 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact"></div>
+        <div class="col-10 position-relative mx-auto mt-2">
+            <div>
+                <h1 class="text-center font-weight-bold title">CONTACT ME</h1>
+            </div>
+            <form method="post" class="col-lg-10 mx-auto border border-secondary rounded p-4 my-5">
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label asp-for="EmailInfo.Email" class="col-sm-12 col-form-label"></label>
+                        <div class="col-sm-12">
+                            <input asp-for="EmailInfo.Email" class="form-control" required />
+                            <span class="invalid-feedback" asp-validation-for="EmailInfo.Email"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label asp-for="EmailInfo.Name" class="col-sm-12 col-form-label"></label>
+                        <div class="col-sm-12">
+                            <input asp-for="EmailInfo.Name" class="form-control" required id="name-box" />
+                            <span class="invalid-feedback" asp-validation-for="EmailInfo.Name"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row" id="messagebox">
+                    <label asp-for="EmailInfo.Message" class="col-sm-12 col-form-label"></label>
+                    <div class="col-sm-12">
+                        <textarea class="form-control" asp-for="EmailInfo.Message" rows="10" required></textarea>
+                        <span class="invalid-feedback" asp-validation-for="EmailInfo.Message"></span>
+                    </div>
+                </div>
+                <div class="form-group row mt-4">
+                    <button type="submit" class="btn btn-dark mx-auto" id="submit-button">Submit</button>
+                </div>
+            </form>
+            <div class="modal position-absolute align-content-center" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="User-name-box"></h5>
+                            <button type="button" class="closing close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Thank you for email, I will get back to you shortly!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success closing">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p class="mx-auto" id="copyright">
+                    2020 &copy; Jin Kim
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    @*bootstrap*@
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="~/js/app.js?t=@DateTime.Now.Ticks" ></script>
+</body>

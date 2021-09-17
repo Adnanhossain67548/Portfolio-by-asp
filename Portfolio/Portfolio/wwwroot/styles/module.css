@@ -1,0 +1,303 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Muli&family=Lato&display=swap');
+
+#curtain-box {
+    background-image: url("../images/curtain.jpeg");
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+header > nav {
+    font-family: 'Lobster', cursive !important;
+}
+
+nav a {
+    font-size: 1.2rem !important;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+nav a.active {
+    color: blueviolet !important;
+}
+
+#navvy {
+    background-color: transparent !important;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif !important;
+}
+
+#text-box {
+    text-align: center;
+    font-family: 'Lobster', cursive !important;
+    color: #feeb00 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.4s;
+    width: 100%;
+}
+
+    #text-box > h1 {
+        font-family: 'Lobster', cursive !important;
+        font-size: 3rem;
+        text-shadow: 2px 4px 4px #000a18;
+    }
+
+    #text-box > p {
+        font-size: 1.3rem;
+        text-shadow: 2px 4px 4px #000a18;
+    }
+
+
+h4 {
+    font-family: 'Muli', sans-serif;
+}
+
+#about-us, #skills, #contact {
+    height: 135px;
+}
+#projects {
+    height: 155px;
+}
+
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.90);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes enlargeHover {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
+@keyframes enlargeHoverOut {
+    0% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+
+.skill-image {
+    width: 130px;
+    height:130px;
+}
+
+    .skill-image:hover {
+        animation-name: enlargeHover;
+        animation-timing-function: ease-in;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+    }
+
+.skill-container {
+    width: 97%;
+    margin: auto;
+}
+
+.skill-box{
+    margin: auto;
+}
+
+button > h4 {
+    font-size: 1.2rem;
+    color: #7e4bf5;
+    font-weight: bold;
+}
+
+.modal {
+    bottom: 50%;
+}
+
+.interactive-nav {
+    background-color: var(--dark) !important;
+}
+
+#profile-picture {
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.4s;
+}
+
+.projectBox {
+    font-family: 'Muli', sans-serif;
+    animation-name: enlargeHoverOut;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+    .projectBox:hover {
+        animation-name: enlargeHover;
+        animation-timing-function: ease-in;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+.cardbody {
+    top: 0;
+    width: 99%;
+    left: 0.2%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation-name: fadeOutOpacity;
+    animation-timing-function: linear;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+    .cardbody:hover {
+        animation-name: backgroundFadeIn;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        border-radius: 2%;
+    }
+
+.inner-container {
+    width: 90%;
+    margin: auto;
+}
+
+.project-row {
+    width: 90%;
+    margin: auto;
+}
+
+.card-img-top {
+    height: 230px;
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.37);
+}
+
+#profile-info {
+    line-height: 1.6;
+    font-size: 19px;
+    padding: 45px 10px;
+    font-family: 'Muli', sans-serif;
+    word-spacing: 4px;
+    white-space: pre-line;
+}
+
+#profile-pic {
+    width: 80%;
+    border-radius: 5%;
+}
+
+form {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.3rem;
+}
+
+label {
+    font-size: 15px !important;
+    color: gray;
+}
+
+#messagebox {
+    margin:auto;
+}
+
+@media(max-width: 1000px) {
+    #curtain-box {
+        background-attachment:scroll;
+        
+    }
+    .card-img-top {
+        height: 100%;
+    }
+
+    #text-box > h1 {
+        font-size: 7rem;
+    }
+    #text-box > p {
+        font-size: 2.5rem;
+    }
+    main > h1{
+        font-size: 3.5rem !important;
+    }
+
+    .title {
+        font-size: 3.5rem !important;
+    }
+
+    #profile-info {
+        padding: 5px 60px;
+        font-size: 2rem;
+    }
+    #link-content {
+        padding-left: 10% !important;
+        font-size: 2rem;
+    }
+    .osc-pic {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.nav-link {
+    color: #feeb00 !important;
+}
+
+.link-fonts {
+    color: black !important;
+}
+.link-fonts:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+#link-content {
+    padding-left: 3%;
+}
